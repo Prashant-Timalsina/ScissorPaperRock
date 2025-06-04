@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Scissor Paper</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Scissor Paper</h1>
+
+    <div class="cards">
+      <div class="ch rock" onclick="play('rock')">
+        <span>✊</span>
+        <p>Rock</p>
+      </div>
+      <div class="ch scissor" onclick="play('scissor')">
+        <span>✌️</span>
+        <p>Scissor</p>
+      </div>
+      <div class="ch paper" onclick="play('paper')">
+        <span>🖐️</span>
+        <p>Paper</p>
+      </div>
+    </div>
+
+    <h2 class="result">Pick Your Choice</h2>
+    <div class="computer-display">
+        <p>Computer Chose:</p>
+        <span class="computerChoice">After You</span>
+    </div>
+
+    <div class="information">
+      Player Score: <span class="playerScore">0</span>
+      Computer Score: <span class="computerScore">0</span>
+      <br /><br />
+      <button class="reset" onclick="reset()">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
