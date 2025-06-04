@@ -13,7 +13,7 @@ function play(playerChoice){
     document.querySelectorAll('.ch').forEach(card =>card.classList.remove('selected'));
     document.querySelector(`.ch.${playerChoice}`).classList.add('selected');
 
-    document.querySelector(".result").textContent = "Computer Turn 🖥️"
+    document.querySelector(".result").textContent = "Computer Turn 🖥️..."
 
     setTimeout(function computerMove(){
         const compChoice = computerChoice[Math.floor(Math.random() *3)]
